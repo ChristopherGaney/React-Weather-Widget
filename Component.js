@@ -31,7 +31,6 @@ module.exports = React.createClass({
 		}
 	},
 	componentWillReceiveProps: function(nextProps) {
-	console.log(nextProps);
 		if(this.props.eventLocale !== nextProps.eventLocale) {
 			var locale = nextProps.eventLocale;
 			this.getLocale(locale);
